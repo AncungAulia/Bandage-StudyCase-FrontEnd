@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Study Case</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-dark">
+            <div class=collapse-navbar-dark>
+                <div class="container-dark">
+                    <div class="row-dark">
+                        <div class="col-dark-1">
+                            <a href="tel: (255) 555-0118" class="phone-btn">
+                                <img src="assets/vector-phone.svg" alt="phone" width="16px" height="16px">
+                                <small>(225) 555-0118</small>
+                            </a>
+                            <a href="mailto:michelle.rivera@example.com" class="mail-btn" width="16px" height="12px">
+                                <img src="assets/vector-mail.svg" alt="mail"> 
+                                <small>michelle.rivera@example.com</small>
+                            </a>
+                        </div>
+                        <div class="col-dark-2">
+                            <h6>Follow Us and get a chance to win 80% off</h6>
+                        </div>
+                        <div class="col-dark-3">
+                            <h6>Follow Us :</h6>
+                            <div class="nav-social-media">
+                                <a href="https://instagram.com">
+                                    <img src="assets/vector-ig.svg" alt="instagram">
+                                </a>
+                                <a href="https://youtube.com">
+                                    <img src="assets/vector-yt.svg" alt="youtube">
+                                </a>
+                                <a href="https://facebook.com">
+                                    <img src="assets/vector-facebook.svg" alt="facebook">
+                                </a>
+                                <a href="https://twitter.com">
+                                    <img src="assets/vector-twitter.svg" alt="twitter">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-light">
+            <div class="container-navbar-light">
+                <div class="collapse-navbar-light">
+                    <div class="container-light-right">
+                        <li class="nav-login">
+                            <a href="">
+                                <img src="assets/vector-login.svg" alt="">
+                                <small>Login / Register</small>
+                            </a>
+                        </li>
+                        <li class="nav-search">
+                            <a href="">
+                                <img src="assets/vector-search.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-tray">
+                            <a href="">
+                                <img src="assets/vector-tray.svg" alt="">
+                                <small>1</small>
+                            </a>
+                        </li>
+                        <li class="nav-love">
+                            <a href="">
+                                <img src="assets/vector-love.svg" alt="">
+                                <small>1</small>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="container-light-middle">
+                        <li class="nav-home">
+                            <a href=#"">
+                                <small>Home</small>
+                            </a>
+                        </li>
+                        <li class="nav-shop">
+                            <button class="drop-down-btn" onclick="toggleDropdown()">
+                                <small>Shop</small>
+                                <img src="assets/vector-dropdown.svg" alt="">
+                            </button>
+                            <div class="drop-down-contents">
+                                <a href="">Shop 1</a>
+                                <a href="">Shop 2</a>
+                                <a href="">Shop 3</a>
+                            </div> 
+                        </li>
+                        <li class="nav-about">
+                            <a href="#">
+                                <small>About</small>
+                            </a>
+                        </li>
+                        <li class="nav-blog">
+                            <a href="#">
+                                <small>Blog</small>
+                            </a>
+                        </li>
+                        <li class="nav-contact">
+                            <a href="#">
+                                <small>Contact</small>
+                            </a>
+                        </li>
+                        <li class="nav-pages">
+                            <a href="#">
+                                <small>Pages</small>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <div class="navbar-brand">
+                    <h3>Bandage</h3>
+                    <label for="menu-toggle">
+                        <input type="checkbox" name="menu" id="menu-toggle">
+                        <img src="assets/vector-menu.svg" alt="menu">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-breadcrumb">
+        <div class="row-breadcrumb">
+            <div class="col-breadcrumb">
+                <div class="breadcrumb">
+                    <a href="#">Home</a>
+                    <img src="assets/vector-breadcrumb.svg" alt=">">
+                    <h6>Shop</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-container">
+            <div class="hero-row">
+                <div class="hero-col-left">
+                    <div class="carousel">
+                        <div class="carousel-control-prev" onclick="prevCarousel()">
+                            <img src="assets/vector-carousel-left.svg" alt="<">
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <img src="assets/carousel-caption-1.png" alt="cap-1" class="hero-display-1">
+                                <img src="assets/carousel-caption-2.png" alt="cap-2" class="hero-display-2">
+                            </div>
+                        </div>
+                        <div class="carousel-control-next" onclick="nextCarousel()">
+                            <img src="assets/vector-carousel-right.svg" alt=">">
+                        </div>
+                    </div>
+                    <div class="carousel-indicator">
+                        <img src="assets/carousel-caption-1.png" alt="cap-1" class="thumbnail-active">
+                        <img src="assets/carousel-caption-2.png" alt="cap-2">
+                    </div>
+                </div>
+                <div class="hero-col-right">
+                    <div class="hero-product-actions">
+                        <button onclick="alert('Option Selected!')">
+                            <h6>Select Options</h6>
+                        </button>
+                        <a href="#">
+                            <div class="icon-love">
+                                <img src="assets/vector-hero-love.svg" alt="love">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icon-tray">
+                                <img src="assets/vector-hero-tray.svg" alt="tray">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icon-more">
+                                <img src="assets/vector-hero-eye.svg" alt="" class="eye">
+                                <img src="assets/vector-hero-eyedot.svg" alt="" class="eyedot">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hero-product-colors">
+                        <div class="blue"></div>
+                        <div class="green"></div>
+                        <div class="orange"></div>
+                        <div class="black"></div>
+                    </div>
+                    <hr class="horizontal-line">
+                    <p class="hero-paragraph">
+                        Met minim Mollie non desert Alamo est sit cliquey dolor
+                        do met sent. RELIT official consequent door ENIM RELIT Mollie.
+                        Excitation venial consequent sent nostrum met.
+                    </p>
+                    <div class="hero-availability">
+                        <h6>Availability :</h6>
+                        <h6 style="color: rgba(35, 166, 240, 1);">In Stock</h6>
+                    </div>
+                    <h5>$1,139.33</h5>
+                    <div class="hero-review">
+                        <div class="stars">
+                            <img src="assets/vector-star.svg" alt="star">
+                            <img src="assets/vector-star.svg" alt="star">
+                            <img src="assets/vector-star.svg" alt="star">
+                            <img src="assets/vector-star.svg" alt="star">
+                            <img src="assets/vector-star-empty.svg" alt="star-empty">
+                        </div>
+                        <h6>10 Reviews</h6>
+                    </div>
+                    <h4>Floating Phone</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products">
+        <div class="products-container">
+            <div class="products-row-1">
+                <div class="main-content">
+                    <h3>BESTSELLER PRODUCTS</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="products-row-2">
+                <div class="products-col">
+                    <div class="product-card">
+                        <div class="product-cover">
+                            <img src="assets/product-display-1.png" alt="product-1">
+                        </div>
+                        <div class="product-attributes">
+                            <h5>Graphic Design</h5>
+                            <a href="#">English Department</a>
+                            <div class="prices">
+                                <h5>$16.48</h5>
+                                <h5 style="color: rgba(35, 133, 109, 1);">$6.48</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-cover">
+                            <img src="assets/product-display-2.png" alt="product-2">
+                        </div>
+                        <div class="product-attributes">
+                            <h5>Graphic Design</h5>
+                            <a href="#">English Department</a>
+                            <div class="prices">
+                                <h5>$16.48</h5>
+                                <h5 style="color: rgba(35, 133, 109, 1);">$6.48</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-cover">
+                            <img src="assets/product-display-3.png" alt="product-3">
+                        </div>
+                        <div class="product-attributes">
+                            <h5>Graphic Design</h5>
+                            <a href="#">English Department</a>
+                            <div class="prices">
+                                <h5>$16.48</h5>
+                                <h5 style="color: rgba(35, 133, 109, 1);">$6.48</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-cover">
+                            <img src="assets/product-display-4.png" alt="product-4">
+                        </div>
+                        <div class="product-attributes">
+                            <h5>Graphic Design</h5>
+                            <a href="#">English Department</a>
+                            <div class="prices">
+                                <h5>$16.48</h5>
+                                <h5 style="color: rgba(35, 133, 109, 1);">$6.48</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-row-3">
+                <div class="products-col">
+                    <div class="product-card">
+                        <div class="product-cover">
+                            <img src="assets/product-display-5.png" alt="product-5">
+                        </div>
+                        <div class="product-attributes">
+                            <h5>Graphic Design</h5>
+                            <a href="#">English Department</a>
+                            <div class="prices">
+                                <h5>$16.48</h5>
+                                <h5 style="color: rgba(35, 133, 109, 1);">$6.48</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-cover">
+                            <img src="assets/product-display-6.png" alt="product-6">
+                        </div>
+                        <div class="product-attributes">
+                            <h5>Graphic Design</h5>
+                            <a href="#">English Department</a>
+                            <div class="prices">
+                                <h5>$16.48</h5>
+                                <h5 style="color: rgba(35, 133, 109, 1);">$6.48</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-cover">
+                            <img src="assets/product-display-7.png" alt="product-7">
+                        </div>
+                        <div class="product-attributes">
+                            <h5>Graphic Design</h5>
+                            <a href="#">English Department</a>
+                            <div class="prices">
+                                <h5>$16.48</h5>
+                                <h5 style="color: rgba(35, 133, 109, 1);">$6.48</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-cover">
+                            <img src="assets/product-display-8.png" alt="product-8">
+                        </div>
+                        <div class="product-attributes">
+                            <h5>Graphic Design</h5>
+                            <a href="#">English Department</a>
+                            <div class="prices">
+                                <h5>$16.48</h5>
+                                <h5 style="color: rgba(35, 133, 109, 1);">$6.48</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <button onclick="prev()"><</button>
+            <button onclick="next()">></button>
+        </div>
+    </div>
+</body>
+<script src="script.js" defer></script>
+</html>
